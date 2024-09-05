@@ -10,7 +10,7 @@
     <style>
         body {
             margin: 0;
-            background-image: url(/img/topimg.jpeg);
+            background-image: url(./img/topimg.jpeg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-attachment: scroll;
@@ -104,25 +104,25 @@
 
             //昼間で晴れ
             if(tianqi.indexOf(sunny) > -1 && hours >= 7 && hours < 19){
-                $('body').css('backgroundImage', 'url(/img/sunny_day.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/sunny_day.jpeg)');
                 $('body').css('color', '#000000');
             //夜で晴れ
             } else if (tianqi.indexOf(sunny) > -1 && (hours <7 || hours >= 19)){
-                $('body').css('backgroundImage', 'url(/img/sunny_night.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/sunny_night.jpeg)');
             //昼間で雨
             } else if (tianqi.indexOf(rainy) > -1 && hours >= 7 && hours < 19) {
-                $('body').css('backgroundImage', 'url(/img/rainy_day.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/rainy_day.jpeg)');
                 $("#card").css('background-color', 'rgba(47, 47, 47, 0.6)');
             //夜で雨
             } else if (tianqi.indexOf(rainy) > -1 && (hours <7 || hours >= 19)){
-                $('body').css('backgroundImage', 'url(/img/rainy_night.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/rainy_night.jpeg)');
             //昼間で曇り
             } else if (tianqi.indexOf(cloud) > -1 && hours >= 7 && hours < 19) {
-                $('body').css('backgroundImage', 'url(/img/cloud_day.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/cloud_day.jpeg)');
                 $('body').css('color', '#000000');
             //夜で曇り
             } else if (tianqi.indexOf(cloud) > -1 && (hours <7 || hours >= 19)){
-                $('body').css('backgroundImage', 'url(/img/cloud_night.jpeg)');
+                $('body').css('backgroundImage', 'url(./img/cloud_night.jpeg)');
                 $("#card").css('background-color', 'rgba(47, 47, 47, 0.6)');
             }
         });
