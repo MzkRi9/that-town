@@ -65,14 +65,8 @@
             $("#time").html(y+"年"+m+"月"+d+"日"+" "+h+":"+min+":"+s);
         },1000);
 
-        //場所の取得
-        const key   = "";  //***自分のKEY***
-        const lat   = "23.377563";   //実家の緯度
-        const lon   = "103.152471";  //実家の軽度
-        const icon  = "http://openweathermap.org/img/wn/"; //ICONにアクセスするURL
-
         //OpenWeatherAPI（天気情報を取得）今の天気
-        const url = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat='+lat+'&lon='+lon+'&appid='+key+'&lang=zh_cn';
+        const url = 'http://flowersknives.jp/weather.php';
         $.ajax({
             url: url,
             type: 'get',
